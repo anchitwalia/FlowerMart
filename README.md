@@ -9,7 +9,7 @@ Follow the below steps to run:
 5. Copy the contents of dist/project-name/ folder into "Backend" folder at path "/Backend/staticContent/
 6. Open another command prompt and navigate to "Backend" folder.
 7. Run the command "node index.js"
-8. Open the browser and run the url "localhost:8080"
+8. Open the browser and run the url your configured ip:8080 eg: 192.168.43.249:8080 
 
 Modules for Express
 1. Express Download CMD: npm install express --save
