@@ -1,0 +1,44 @@
+<div class="screen container-fluid">
+  <div class="d-flex justify-content-center h-100">
+    <div class="card">
+      <div class="card-header">
+        <h3>Sign Up</h3>
+      </div>
+      <div class="card-body">
+        <form (submit)= "signUp($event)">
+          <div class="input-group form-group">
+            <input type="text" class="form-control" placeholder="Full Name" onkeyup="this.value = this.value.toUpperCase();" id="addfullName">
+          </div>
+          <div class="input-group form-group">
+            <input type="text" class="form-control" placeholder="Username" id="adduserName">
+          </div>
+          <div class="input-group form-group">
+            <input type="password" class="form-control" placeholder="Password" id="addpassWord1">
+          </div>
+          <div class="input-group form-group">
+            <input type="password" class="form-control" placeholder="Re-Enter Password" id="addpassWord2">
+          </div>
+          <div>
+            <label class = "acctyp" for="inputState">User Type</label>
+            <select id="userType" class="form-control">
+              <option value = "Customer">Customer</option>
+              <option value = "Seller">Seller</option>
+            </select>
+          </div>
+          <br>
+          <div class="form-group">
+            <input type="submit" value="Sign Up" class="btn float-right login_btn">
+          </div>
+        </form>
+      </div>
+      <div class="card-footer">
+        <div class="d-flex justify-content-center links">
+          Please keep your password safe.
+        </div>
+        <div class="d-flex justify-content-center links">
+          Already have an account?<a routerLink = "">Log in</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

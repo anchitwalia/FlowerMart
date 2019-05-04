@@ -1,0 +1,49 @@
+<div *ngIf="BUTTON" class = "container">
+  <input type = "button" (click) = "Toggle()" value = "Toggle View" class="btn btn-primary tog">
+</div>
+<br><br><br>
+<div *ngIf = "cusShow" class = "content container">
+    <div class = "card-deck">
+        <div *ngFor="let flowerName of flowerList; let i=index;">
+            <div *ngIf = "flowerList[i].isAvailable" class = "card text-center rounded zoom">
+                <div class = "card-body">
+                    <div class = "card-title"><h4 class = "title-style">{{ flowerList[i].flowerName }}</h4></div>
+                </div>
+                <img class="card-img-top" src= "../{{ flowerList[i].imgPath }}" alt="Card image cap">            
+                <div class="card-body">
+                    <p class="card-text" id = "*flowerPrice">Price : ₹ {{flowerList[i].flowerPrice}}</p>
+                    <input type = "submit" (click) = "buyFlower(i)" value = "Buy" class="btn btn-primary">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf = "sellShow" class = "content container">
+  <br>
+    <table class="table container">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Flower Name</th>
+            <th scope="col">Flower Price</th>
+            <th scope="col">Is Available</th>
+            <th scope="col">Action Available</th>
+            <th scope="col">Action Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let flowerName of flowerList; let i=index;"> 
+            <td scope="row">{{i}}</td>
+            <td scope="row">{{ flowerList[i].flowerName }}</td>
+            <td scope="row">Price : ₹ {{flowerList[i].flowerPrice}}</td>
+            <td scope="row">{{flowerList[i].isAvailable}}</td>
+            <td>
+              <button (click) = "toggleAvailable(i)" class = "btn btn-primary login-btn">Change Availability</button>
+            </td>
+            <td>
+              <button (click) = "deleteFlower(i)" class = "btn delete">Delete FLower</button>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+</div>

@@ -1,0 +1,21 @@
+.login_btn{
+    color: black;
+    background-color: #FFC312;
+    width: 100px;
+    font-family: 'Numans', sans-serif;
+}
+
+.login_btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.container {
+    font-family: 'Numans', sans-serif;
+}
+
+.div2{
+    height: auto;
+    margin-left: 34rem;
+    align-content: center;
+}

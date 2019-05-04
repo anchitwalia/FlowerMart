@@ -1,0 +1,74 @@
+.screen {
+    background-image: url('../../assets/images/background/galaxy.jpg');
+    font-family: 'Numans', sans-serif;
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.container{
+    height: 100%;
+    align-content: center;
+}
+    
+.card{
+    height: 520px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0,0,0,0.5) !important;
+}
+    
+.card-header h3{
+    color: white;
+}
+    
+.social_icon{
+    position: absolute;
+    right: 20px;
+    top: -45px;
+}
+    
+.input-group-prepend span{
+    width: 50px;
+    background-color: #FFC312;
+    color: black;
+    border:0 !important;
+}
+    
+input:focus{
+    outline: 0 0 0 0  !important;
+    box-shadow: 0 0 0 0 !important;
+}
+    
+.login_btn{
+    color: black;
+    background-color: #FFC312;
+    width: 100px;
+}
+
+.input{
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.acctyp{
+    color: white;
+}
+    
+.login_btn:hover{
+    color: black;
+    background-color: white;
+}
+    
+.links{
+    color: #FFFFFF;
+}
+    
+.links a{
+    margin-left: 4px;
+    color: #FFC312;
+}

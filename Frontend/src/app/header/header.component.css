@@ -1,0 +1,46 @@
+.navbar_style {
+    background-color: #232F3E; 
+    color: #FFFFFF !important;
+    font-family: 'Numans', sans-serif;
+}
+
+.top_style {
+    background-color: rgb(50, 67, 87);
+    color : #FFFFFF;
+    text-align: center;
+    font-family: 'Numans', sans-serif;
+}
+
+.text {
+    color : #FFFFFF;
+    font-family: 'Numans', sans-serif;
+}
+
+.user-style {
+    padding-right: 20px;
+}
+
+.nav-style {
+    padding-left: 30px;
+}
+
+.login_btn{
+    color: black;
+    background-color: #FFC312;
+    width: 100px;
+    font-family: 'Numans', sans-serif;
+}
+
+.login_btn:hover{
+    color: black;
+    background-color: white;
+}
+
+.nav-btn {
+    text-align: justify;
+    transition: transform .01s; 
+}
+
+.nav-btn:hover {
+    transform: scale(1.1);   
+}

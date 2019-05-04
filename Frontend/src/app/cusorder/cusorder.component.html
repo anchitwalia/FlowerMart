@@ -1,0 +1,31 @@
+<table class="table container">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Id</th>
+      <th scope="col">Flower Name</th>
+      <th scope="col">Flower Price</th>
+      <th scope="col">Mobile Number</th>
+      <th scope="col">Address</th>
+      <th scope="col">Order Shipped</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let order of orderList; let i=index"> 
+      <th scope="row">{{i}}</th>
+      <th scope="row">{{order.orderId}}</th>
+      <td scope="row">{{order.flowerName}}</td>
+      <td scope="row">{{order.flowerPrice}}</td>
+      <td scope="row">{{order.mobile}}</td>
+      <td>
+        <tr>{{order.name}},</tr>
+        <tr>{{order.address}}, {{order.city}}</tr>
+        <tr>{{order.country}} - {{order.zip}}</tr>
+      </td>
+      <td scope="row">{{order.isShipped}}</td>
+    </tr>
+  </tbody>
+</table>
+<div *ngIf="showHide" class="div2">
+    <h3>No Result Found</h3>
+</div>

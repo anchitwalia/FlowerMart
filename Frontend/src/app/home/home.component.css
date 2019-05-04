@@ -1,0 +1,60 @@
+.rounded {
+    background-color: rgba(255, 255, 255, 1); 
+}
+
+.content {
+    font-family: 'Numans', sans-serif;
+}
+
+.card {
+    margin-top: 2rem;
+    margin-left: 1.8rem;
+    margin-bottom: 2rem;
+    width: 14.8rem;
+    height: 23rem;
+}
+
+
+
+.title-style {
+    color: black; 
+    font-family: 'Numans', sans-serif;
+}
+
+.delete {
+    color: black;
+    background-color: #FFC312;
+    width: 150px;
+    font-family: 'Numans', sans-serif;
+}
+
+.delete:hover{
+    color: black;
+    background-color: white;
+}
+
+.nav-btn {
+    text-align: justify;
+    transition: transform .01s; 
+}
+
+.nav-btn:hover {
+    transform: scale(1.5);   
+}
+
+.zoom {
+    transition: transform 0.1s; /* Animation */
+}
+  
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+.tog {
+    margin-top: 2rem;
+    float: right;
+}
+
+.btn {
+    text-align: center;
+}

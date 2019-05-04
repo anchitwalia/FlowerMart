@@ -1,0 +1,23 @@
+.div-up {
+    background-color: rgb(50, 67, 87);
+    height: 250px;
+    font-family: 'Numans', sans-serif;
+}
+
+.div-down {
+    background-color: #232F3E;
+    height: 70px;
+    font-family: 'Numans', sans-serif;
+}
+
+.text-head {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Numans', sans-serif;
+}
+
+.text {
+    text-align: justify;
+    color: #ffffff;
+    font-family: 'Numans', sans-serif;
+}

@@ -1,0 +1,52 @@
+<div>
+  <br><br>
+  <div class = "div1">
+      <form>
+        <div class="input-group form-group">
+          <input type="text" (keyup)="search($event)" class="form-control" placeholder="Search ID, USERNAME, FLOWER-NAME, DATE, TIME, SHIPPED-STATUS">
+        </div>
+      </form>
+  </div>
+  <div>
+    <table class="table container">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Id</th>
+          <th scope="col">Date</th>
+          <th scope="col">Flower Name</th>
+          <th scope="col">Flower Price</th>
+          <th scope="col">User Name</th>
+          <th scope="col">Mobile Number</th>
+          <th scope="col">Address</th>
+          <th scope="col">Order Shipped</th>
+          <th>Ship Order</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let order of orderList; let i=index"> 
+          <th scope="row">{{i}}</th>
+          <td>{{order.orderId}}</td>
+          <td>{{order.date}} {{order.time}}</td>
+          <td>{{order.flowerName}}</td>
+          <td>{{order.flowerPrice}}</td>
+          <td>{{order.userName}}</td>
+          <td>{{order.mobile}}</td>
+          <td>
+            <tr>{{order.name}},</tr>
+            <tr>{{order.address}}, {{order.city}}</tr>
+            <tr>{{order.country}} - {{order.zip}}</tr>
+          </td>
+          <td>{{order.isShipped}}</td>
+          <td>
+            <button (click) = "shipOrder(i)" class = "btn btn-primary login-btn">Ship Order</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div *ngIf="showHide" class="div2">
+    <h3>No Result Found</h3>
+</div>
+
